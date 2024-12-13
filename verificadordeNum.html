@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Verificação de números 👻")
+
+        var a = parseFloat(prompt("Digite o valor para A: "));
+        var b = parseFloat(prompt("Digite o valor para B: "));
+        var c = parseFloat(prompt("Digite o valor para C: "));
+
+        var media = (a + b + c)/3;
+
+        document.write(a, " = ", b, "? ", " Então a sentença é: ",a == b, ".<br>");
+        document.write(a, " > ", b, "? ", "Então a sentença é: ", a > b, ".<br>");
+        document.write(a, " >= ", b, "? ", "Então a sentença é: ", a >= b, ".<br>"); //a >= b
+        document.write(c, " < ", b, "? ", "Então a sentença é: ", c < b, ".<br>"); // c < b
+        document.write(c, " != ", b, "? ", "Então a sentença é: ", c != b, ".<br>"); //c != b
+        document.write("A média entre os valores ", a, ", ", b, " e ", c, " é: ", media, ".<br>");
+        document.write("A média ", media, " é maior que a nota ", a, "? ", media > a, ".<br>");
+    </script>
+</body>
+</html>
