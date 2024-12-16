@@ -20,8 +20,12 @@
 
         const media = (a + b + c) / 3;
 
-        //usando toFixed()
-        const media_Final = media.toFixed(2);
+        //usando toFixed() => esse método retorna uma string
+        //const media_Final = media.toFixed(2);
+
+        //usando Math.round() => esse método mantém o resultado como número
+        const media_Final = Math.round(media * 100) / 100;
+
 
         document.write("A sua média final é: ", media_Final);
        
