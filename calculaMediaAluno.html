@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média do Aluno</title>
+</head>
+<body>
+    <script>
+        //receber os valores das notas
+        //calcular a media
+        //mostrar o resultado da media
+        // plus = arrendondar o valor da media e fixar em 2 casas decimais
+
+        alert("👻 Média do Semestre 2024/2 👻")
+
+        var a = parseFloat(prompt("Digite a nota da Prova 1"));
+        var b = parseFloat(prompt("Digite a nota da Prova 2"));
+        var c = parseFloat(prompt("Digite a nota da Prova 3"));
+
+        const media = (a + b + c) / 3;
+
+        //usando toFixed()
+        const media_Final = media.toFixed(2);
+
+        document.write("A sua média final é: ", media_Final);
+       
+    </script>
+</body>
+</html>
