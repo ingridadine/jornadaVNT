@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas do Círculo</title>
+</head>
+<body>
+    <script>
+        //receber o valor do raio
+        //calcular a área
+        //calcular o perímetro
+        //mostrar os resultados
+
+        alert("🔵 Digite o valor do RAIO do círculo 🔵");
+
+        var raio = parseFloat(prompt("Digite o valor do raio da circunferência: "));
+        
+        // área do círculo = π * r²
+        // π = 3.14
+        const area = 3.14 * raio**2;
+
+        // diâmetro do círculo = 2 * r
+        const diametro = 2 * raio;
+
+        // perímetro do círculo = 2 * π * r
+        const perimetro = 2 * 3.14 * raio;
+        const perimetroRound = Math.round(perimetro * 100) / 100;
+
+        document.write("Para uma circunferência de raio ", raio, "<br>");
+        document.write("O valor  da área é ", area, "<br>");
+        document.write("O valor do diâmetro é ", diametro, "<br>");
+        document.write("O valor do perímetro é ", perimetroRound, "<br>");
+
+    </script>
+</body>
+</html>
