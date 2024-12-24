@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparação e Ordenação de Números</title>
+</head>
+<body>
+    <script>
+        alert("Comparação entre NÚMEROS");
+        alert("Digite três valores:");
+
+        var menor;
+        var medio;
+        var maior;
+        var num1 = parseInt(prompt("Digite o primeiro número: "));
+        var num2 = parseInt(prompt("Digite o segundo número: "));
+        var num3 = parseInt(prompt("Digite o terceiro número: "));
+
+        alert("Digite i [1] se deseja organizar os números em ORDEM CRESCENTE. \n Digite [2] se deseja organizar os números em ORDEM DECRESCENTE.  \n Digite [3] se deseja que o maior número seja inserido entre os 2 outros números.")
+
+        var i = +prompt("Digite o valor de i: ");
+
+        if ((num1 > num2) && (num1 > num3)) {
+            if (num2 > num3) {
+                maior = num1;
+                medio = num2;
+                menor = num3;
+            } else {
+                maior = num1;
+                medio = num3;
+                menor = num2;
+            }
+        } else {
+            if ((num2 > num1) && (num2 > num3)) {
+                if (num1 > num3) {
+                    maior = num2;
+                    medio = num1;
+                    menor = num3;
+                } else {
+                    maior = num2;
+                    medio = num3;
+                    menor = num1;
+                }
+            } else {
+                if ((num3 > num1) && (num3 > num2)) {
+                    if (num1 > num2) {
+                        maior = num3;
+                        medio = num1;
+                        menor = num2;
+                    } else {
+                        maior = num3;
+                        medio = num2;
+                        menor = num1;
+                    }
+                }
+            }
+        }
+
+         if (i == 1) {
+            document.write("Os números em ORDEM CRESCENTE são: " + menor + " | " + medio + " | " + maior);
+        }
+
+        if (i == 2) {
+            document.write("Os números em ORDEM DECRESCENTE são: " + maior + " | " + medio + " | " + menor);
+        }
+
+        if (i == 3) {
+            document.write("Os números organizados na condição em que o MAIOR NÚMERO é inserido entre os outros dois números: " + menor + " | " + maior + " | " + medio);
+        }
+
+        if (i >= 4) {
+            document.write("A condição para ser executada não foi encontrada.");
+        }
+    </script>
+</body>
+</html>
+   
+
+        
