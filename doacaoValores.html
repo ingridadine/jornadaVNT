@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Solidário</title>
+</head>
+<body>
+    <script>
+        alert("------------------- \n Charity Program \n ------------------- \n [1] To donate $10 \n [2] To donate $25 \n [3] To donate $50 \n [4] To donate other amounts \n [5] Cancel"); //**********criar o conteúdo
+
+        var value;
+        var numOption = parseFloat(prompt("Enter the corresponding option for the donation amount:"));
+
+        switch (numOption) {
+        case 1:
+            value = 10;
+            break;
+        
+        case 2: 
+            value = 25; 
+            break;
+
+        case 3:
+            value = 50;
+            break;
+
+        case 4:
+            value = +prompt("Enter the donation amount:");
+            break;
+
+        default:
+            value = 0;
+            break;
+        }
+
+        document.write("-------------------" + "<br>");
+        document.write("Your donation: " + "$" + value + "<br>");
+        document.write("THANKS!" + "<br>");
+        document.write("-------------------" + "<br>");
+    </script>
+</body>
+</html>
