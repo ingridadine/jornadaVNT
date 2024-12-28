@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Cartesiano</title>
+</head>
+<body>
+    <script>
+        alert("Análise do Sistema Cartesiano");
+
+        var x = +prompt("Valor da coordenada x: ");
+        var y = +prompt("Valor da coordenada y: ");
+
+        while (x != 0 && y != 0) {
+            if (x > 0 && y > 0) {
+                alert("Essa coordenada está no PRIMEIRO QUADRANTE.");
+            } else if (x < 0 && y > 0) {
+                alert("Essa coordenada está no SEGUNDO QUADRANTE.");
+            } else if (x > 0 && y < 0) {
+                alert("Essa coordenada está no TERCEIRO QUADRANTE.");
+            } else {
+                alert("Essa coordenada está no QUARTO QUADRANTE.");
+            }
+
+            x = +prompt("Valor da coordenada x: ");
+            y = +prompt("Valor da coordenada y: ");
+        }
+
+        document.write("Condição insatisfatória :C");
+    </script>
+</body>
+</html>
