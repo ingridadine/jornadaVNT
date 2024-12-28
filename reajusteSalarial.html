@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste Salarial</title>
+</head>
+<body>
+    <script>
+        alert("Análise Salarial");
+
+        var anoAtual, salario, novoSalario, percentual;
+
+        anoAtual = +prompt("Digite o ano atual: ");
+        salario = +prompt("Digite o valor do salário inicial: ");
+        percentual = (1.5/100);
+        novoSalario = salario + percentual*salario;
+
+        document.write("Salário com primeiro aumento R$" + novoSalario);
+        document.write("<br>");
+
+        for (i = 2020; i <= anoAtual; i++) {
+            percentual = 2*percentual;
+            novoSalario = novoSalario  + percentual*novoSalario;
+            
+            document.write("Ano " + i + ", novo salário R$ " + novoSalario.toFixed(2));
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
